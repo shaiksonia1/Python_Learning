@@ -22,6 +22,8 @@ name="sonia"
 len1=len(name)
 print(name[-1:-3])
 
+#hi
+
 #practice
 nm="harry"
 print(nm[-4:-2])
