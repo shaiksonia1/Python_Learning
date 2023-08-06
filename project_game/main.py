@@ -14,11 +14,11 @@ clock = pygame.time.Clock()
 class Apple:
     def __init__(self,image,position,speed):
         self.image = image
-        self.rect = self.image.get_rect(topleft=position)
+        self.rect = self.image.get_rect(topleft = position)
         self.speed = speed
+    def move(self):
+        self.rect.y +=self.speed
 
-
-apple1 = Apple()
 
 #constants
 TILESIZE = 32
@@ -55,6 +55,11 @@ def update():
     keys = pygame.key.get_pressed()
     if keys[pygame.K_RIGHT]:
         player_rect.x += 8
+
+#apples management
+
+for apple in apples:
+    apple.move()
 
 def draw():
     screen.fill('light blue')
