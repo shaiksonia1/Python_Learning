@@ -11,8 +11,8 @@ if __name__ == "__main__":
     surface.fill((50,235,195)) #it will fill the background color with rgb
     pygame.display.flip() #we are displaying the screen by calling this method it will only display for a second to keep it we need to use time.
     #time.sleep(5) # we are setting display time for 5 seconds
-    block = pygame.image.load("snake_game/resources/block.jpg").convert()
-    surface.blit(block,(100,100))
+    block = pygame.image.load("projects/snake_game/resources/block.jpg").convert()
+    surface.blit(block, (100,100))
 
 running = True #we are creating a variable running to close the window using while loop
 
